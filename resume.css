@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  color: #2c3e50;
+  padding: 20px;
+}
+
+/* HEADER */
+body > div {
+  max-width: 1100px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+/* LINKS */
+a {
+  display: inline-block;
+  font-size: 16px;
+  padding: 6px 12px;
+  margin: 5px 0;
+  color: #ffffff;
+  background: linear-gradient(90deg, #00b4d8, #0077b6);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  transform: scale(1.05);
+}
+
+/* PROFILE SECTION */
+table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; /* 👈 MAIN GAP BETWEEN IMAGE & TEXT */
+  margin: 30px auto;
+  max-width: 1100px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+tr {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  gap: 40px; /* 👈 EXTRA GAP CONTROL */
+}
+
+/* IMAGE SIDE */
+td:first-child {
+  flex: 1;
+  text-align: center;
+}
+
+/* TEXT SIDE */
+td:last-child {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px; /* 👈 SMALL EXTRA SPACE */
+}
+
+td:last-child {
+  max-width: 550px;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  text-align: center;
+  padding: 25px;
+
+  background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+  border-radius: 18px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+td:last-child:hover {
+  transform: scale(1.02);
+}
+
+/* PROFILE IMAGE */
+img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #00b4d8;
+  box-shadow: 0 5px 20px rgba(0,180,216,0.4);
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* SECTIONS */
+section {
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  text-align: center;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* HEADINGS */
+h2 {
+  border-left: 6px solid #00b4d8;
+  padding-left: 12px;
+  margin-bottom: 15px;
+  color: #0077b6;
+  text-align: left;
+}
+
+h3 {
+  color: #0096c7;
+  margin-top: 10px;
+  text-align: left;
+}
+
+/* LIST */
+ul {
+  margin-left: 20px;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* CERTIFICATES */
+section img {
+  width: 220px;
+  height: 150px;
+  margin: 12px;
+  border-radius: 12px;
+  border: 3px solid #caf0f8;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+section img:hover {
+  transform: scale(1.08);
+  border-color: #00b4d8;
+}
+
+/* FAQ */
+details {
+  background: #f1f9ff;
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+/* FOOTER */
+footer {
+  max-width: 1100px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 15px;
+  background: #0077b6;
+  color: white;
+  border-radius: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  table, tr {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  td:last-child {
+    max-width: 100%;
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+  img {
+    width: 160px;
+    height: 160px;
+  }
+
+  section img {
+    width: 150px;
+    height: 110px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
